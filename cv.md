@@ -8,9 +8,9 @@
 I started my career in information security in 2012 and have over 10 years of experience. I am ready for new challenges and I want to improve my knowledge and skills. My goal is to find interesting and challenging job, improve my skills and help my employer to improve it's ISMS, protection level against threats and reach it's business goals.
 
 ## Courses
-- **Certified Ethical Hacker v11 2019, Eureca.**
+- **Certified Ethical Hacker v11 2019, Eureca.**\n
 Nov, 2019 - Present
-- **Implementing Core Cisco ASA Security (SASAC) 1.0 2017, Eureca.**
+- **Implementing Core Cisco ASA Security (SASAC) 1.0 2017, Eureca.**\n
 Jul, 2019 - Present
 - **Certified LogPoint User 2021, LogPoint Training center.**
 Aug, 2021 - Present
@@ -22,6 +22,7 @@ Apr 2021 - Mar 2025
 **Apr 2019 - Present**
 [RAOS Project Oy](https://raosproject.fi), Helsinki, Finland
 **Information security team manager**
+
 Duties:
 - Administration of Netwrix Auditor.
 - Monitoring changes in IT infrastructure using Netwrix Auditor.
@@ -43,6 +44,7 @@ Achievements:
 **May 2018 - Apr 2019**
 [RAOS Project Oy](https://raosproject.fi), Helsinki, Finland
 **Information security team Lead specialist**
+
 Duties:
 - Administration of information security tools on PCs certified in accordance with Russian information security requirements
 - Administration of Netwrix Auditor
@@ -63,6 +65,7 @@ Achievements:
 **Jun 2016 - May 2018**
 [Bank Orange](https://www.bankorange.ru/), Saint Petersburg, Russia
 **Chief specialist of Information security department**
+
 Duties:
 - Issuing digital signature
 - Investigation of information security incidents
@@ -78,6 +81,7 @@ Achievements:
 **Dec 2015- Jun 2016**
 [Bank Orange](https://www.bankorange.ru/), Saint Petersburg, Russia
 **Specialist of Information security department**
+
 Duties:
 - Issuing of digital signature for internal users
 - Investigation of information security incidents
@@ -90,6 +94,7 @@ Achievements:
 **Apr 2014- Dec 2015**
 [Gazinformservice](https://gaz-is.ru), Saint Petersburg, Russia
 **Maintenance engineer**
+
 Duties
 - Testing and implementing information security facilities: Blockhost-Network, Blockhost automated pass ordering system.
 - Implementing and configuring software in customers' offices and data-centers
@@ -100,6 +105,7 @@ Achievements:
 **Sep 2012- Apr 2014**
 [Gazinformservice certification authority](https://gaz-is.ru), Saint Petersburg, Russia
 **Support engineer**
+
 Duties:
 - Issuing of keys for digital signature
 - Technical support (1st and 2nd line)
