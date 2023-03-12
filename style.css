@@ -12,9 +12,15 @@ body {
     margin: 0;
     padding: 0;
 }
-
-.nav {
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.header {
     background-color: #323b4c;
+}
+.nav {
+
 }
 
 .nav-list {
@@ -22,13 +28,16 @@ body {
     justify-content: flex-start;
     align-items: center;
     list-style: none;
+    padding: 0;
 }
 
 .exp-list{
     list-style: none;
     display: none;
 }
-
+.nav-item:hover {
+    background-color: #4c515a;
+}
 .nav-link,
 .nav-link:active {
     padding: 0 20px;
@@ -39,31 +48,32 @@ body {
 .nav-link:hover {
     color: #f5f5dc;
 }
-.container {
-    max-width: 1440px;
-    margin: 0;
-}
 .main {
     margin-bottom: auto;
+    margin-top: 10px;
 }
 .main-container {
     display: flex;
     flex-wrap: wrap;
 }
 .info {
-    display: flex;
     width: 40%;
-    align-items: center;
     height: max-content;
     background-color: #323b4c;
     color: #fff;
-
+    padding: auto auto;
 }
 .cv-photo {
-    width: 150px;
-    height: 150px;
+    display: block;
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 50%;
+}
+#contacts {
+    padding-left: 25%;
+    font-size: 20px;
 }
 .experience {
     width: 60%;
