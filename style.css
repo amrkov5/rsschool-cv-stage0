@@ -76,7 +76,7 @@ a,
     text-align: center;
 }
 .section {
-    width: 50%;
+    width: calc(50% - 10px);
     border-bottom: 1px solid #b6d199;
     padding: 0px 15px;
 
@@ -89,8 +89,9 @@ a,
 }
 .row {
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
 }
 .title-text {
     margin-bottom: 5px;
@@ -122,9 +123,10 @@ p {
 .duties-achievements {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .exp-list {
-    width: 49%;
+    width: calc(50% - 15px);
     flex-wrap: wrap;
     padding-left: 15px;
 }
@@ -137,16 +139,21 @@ p {
     background-color: #323b4c;
 }
 .footer-container {
-    align-items: center;
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
+    
 }
 .date {
     color: #f5f5dc;
+    
+}
+.rss {
+    display: flex;
+    align-self: flex-end;
 }
 .rslogo {
     height: 30px;
-    justify-content: flex-end;
+    align-self: flex-end;
 }
 @media (max-width: 768px) {
     .section {
