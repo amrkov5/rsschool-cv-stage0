@@ -21,11 +21,8 @@ body {
 }
 .header {
     background-color: #323b4c;
+    min-width: 50px;
 }
-.nav {
-
-}
-
 .nav-list {
     display: flex;
     justify-content: flex-start;
@@ -43,6 +40,7 @@ body {
     text-decoration-color: #f5f5dc;
     transition: 0.5s;
 }
+a,
 .nav-link,
 .nav-link:active {
     padding: 0 20px;
@@ -106,9 +104,11 @@ body {
 h4 {
     margin: 10px 0 0 0;
     padding-left: 0;
+    color: #323b4c;
 }
 h3 {
     margin: 5px 0px;
+    color: #323b4c;
 }
 p {
     margin: 3px 0px;
@@ -130,6 +130,18 @@ p {
 }
 .footer {
     background-color: #323b4c;
+}
+.footer-container {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+.date {
+    color: #f5f5dc;
+}
+.rslogo {
+    height: 30px;
+    justify-content: flex-end;
 }
 @media (max-width: 768px) {
     .section {
