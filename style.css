@@ -128,6 +128,11 @@ p {
     flex-wrap: wrap;
     padding-left: 15px;
 }
+.text-for-list {
+    margin: 10px 0 0 0;
+    padding-left: 0;
+    color: #323b4c;
+}
 .footer {
     background-color: #323b4c;
 }
