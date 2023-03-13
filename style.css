@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 .container {
     max-width: 1440px;
@@ -31,12 +32,13 @@ body {
     padding: 0;
 }
 
-.exp-list{
+.top-exp-list{
     list-style: none;
     display: none;
 }
 .nav-item:hover {
-    background-color: #4c515a;
+    text-decoration: underline;
+    text-decoration-color: #f5f5dc;
 }
 .nav-link,
 .nav-link:active {
@@ -56,25 +58,69 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-.info {
-    width: 40%;
-    height: max-content;
-    background-color: #323b4c;
+.photo-name {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 10px solid #b6d199;
     color: #fff;
-    padding: auto auto;
+    background-color: #323b4c;
+    padding: 30px 30px 20px;
+}
+.title {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.section {
+    width: 50%;
+    border-bottom: 1px solid #b6d199;
+    padding: 0px 15px;
+
 }
 .cv-photo {
-    display: block;
-    margin: 30px auto;
     width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
 }
-#contacts {
-    padding-left: 25%;
-    font-size: 20px;
+.row {
+    display: flex;
+    width: 100%;
+}
+.title-text {
+    margin-bottom: 5px;
+    color: #323b4c;
+    text-transform: uppercase;
+}
+.list {
+    list-style: none;
+    padding-left: 0px;
+}
+h4 {
+    margin: 0;
+    padding-left: 0;
+}
+h3 {
+    margin: 5px 0px;
+}
+p {
+    margin: 3px 0px;
 }
 .experience {
-    width: 60%;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #b6d199;
+}
+.duties-achievements {
+    display: flex;
+}
+.exp-list {
+    width: 49%;
+    flex-wrap: wrap;
+    padding-left: 15px;
+}
+.footer {
+    background-color: #323b4c;
 }
