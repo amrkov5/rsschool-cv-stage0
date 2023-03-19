@@ -1,0 +1,43 @@
+body {
+    font-family: 'Inter', serif;
+
+}
+.header {
+    display: flex;
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #EDF2EC;
+    justify-content: center;
+    align-items: center;
+    height: 134px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 1220px;
+}
+.nav-link {
+    width: 100%;
+}
+.section {
+    display: flex;
+
+}
+.navlist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 452px;
+    height: 50px;
+}
+.navitem {
+    margin: 0 10px;
+}
+.logo::before {
+    content: icon;
+}
