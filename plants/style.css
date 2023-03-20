@@ -1,8 +1,4 @@
-.main {
-    font-family: 'Inter', serif;
-    font-style: normal;
-    font-weight: 400;
-}
+/* header css start*/
 .header {
     display: flex;
     font-family: 'Inika', serif;
@@ -49,6 +45,8 @@
 .navitem {
     margin: 0 10px;
 }
+/* header css finish*/
+/*main css start*/
 
 .container {
     max-width: 1440px;
@@ -56,15 +54,15 @@
 }
 
 .section {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    height: 532px;
-    width: 100%;
-    flex-wrap: wrap;
+/*    display: flex;
+    justify-content: center;*/
+    max-width: 100%;
 }
+/*welcome css start*/
 #welcome {
     background-color: #EDF2EC;
+    max-height: 532px;
+    padding: 62px 109px;
 }
 
 .container-welcome {
@@ -82,22 +80,29 @@
 .title-welcome {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 549px;
-    height: 100%;
+    height: 340px;
+    padding-top: 36px;
+    padding-bottom: 31px;
 }
 
 .title {
-
+    font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
     line-height: 50px;
     color: #717171;
+    margin-bottom: 44px;
 }
 .text-welcome {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 35px;
+    margin-bottom: 48px;
+    color: #636060;
 }
 .green-text {
     color: #499A18;
@@ -112,15 +117,29 @@
     border-color: #E06733;
     border-width: 2px;
     border-style: solid;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
 }
+/*welcome css finish*/
 
 .text {
     color: #636060;
 }
 
+/*about css start*/
+
+#about {
+    max-height: 666px;
+    padding: 93px 109px 94px;
+}
+
 .container-about {
     display: flex;
-    align-items: center;
+
     justify-content: space-between;
     width: 1222px;
     height: 479px;
@@ -136,6 +155,8 @@
     justify-content: space-between;
     width: 605px;
     height: 350px;
+    margin-top: 68px;
+
 }
 .h2-about {
     font-family: 'Inika';
@@ -144,45 +165,58 @@
     font-size: 40px;
     line-height: 52px;
     color: #499A18;
+    margin-bottom: 40px;
 }
 
 .text-about {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+    color: #636060;
 }
 
 .orange-text {
     color: #E06733;
 }
-
+/*about css finish*/
+/*service css start*/
 #service {
     background-color: #EDF2EC;
+    height: 1260px;
+    padding-top: 40px;
 }
 
 .service-content {
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 109px;
-    margin-top: 40px;
     margin-right: auto;
+    margin-left: 109px;
     width: 1007px;
     height: 94px;
+    padding-top: 5px;
 }
 
 .h2-service {
     color: #499A18;
+    font-family: 'Inika';
+    font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
+    width: 306px;
 }
 
 .serv-btns {
     height: 50px;
     width: 559px;
+    display: flex;
+    justify-content: space-between;
 }
 .service-btn {
-    border-radius: 10px;
+    border-radius: 5px;
     height: 50px;
     width: 161px;
     background-color: #EDF2EC;
@@ -190,9 +224,51 @@
     border-color: #E06733;
     border-style: solid;
     border-width: 1px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
 }
 
 .services {
     height: 955px;
     width: 1222px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 90px;
 }
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 329px;
+    height: 449px;
+    border-radius: 20px;
+    border: 1px solid #E3E1D5;
+}
+
+.service-title {
+    color: #E06733;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.service-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #717171;
+}
+/*service css finish*/
