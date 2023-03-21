@@ -274,7 +274,156 @@
 /*service css finish*/
 /*prices css start*/
 #prices {
-    height: 560px;
-    
+    height: 520px;
+    padding-top: 40px;
+    padding-left: 109px;
+    padding-right: 109px;
+    display: flex;    
+    justify-content: space-between;
+}
+
+.h2-price {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.price-type {
+    width: 332px;
+    height: 391px;
+}
+.price-types {
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    height: 212px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    align-items: center;
+}
+
+.price {
+    display: flex;
+    width: 170px;
+    height: 50px;
+    background-color: #EDF2EC;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;   
+    padding-right: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000;
+}
+
+.call-us-wrap {
+    width: 452px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.h3-call-us {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: right;
+    color: #000;
+    margin-bottom: 38px;
+}
+
+.contact-btn {
+    border-radius: 5px;
+    height: 50px;
+    width: 161px;
+    background-color: #fff;
+    color: #E06733;
+    border-color: #E06733;
+    border-style: solid;
+    border-width: 1px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 39px;
+}
+
+.leafs-prices {
+    width: 152px;
+    height: 175px;
 }
 /*prices css finish*/
+/*contacts css start*/
+#contacts {
+    height: 550px;
+    background-color: #EDF2EC;
+    display: flex;
+    flex-direction: row;
+}
+.contact-pic {
+    position: absolute;
+    width: 400px;
+    height: 497px;
+    margin-top: 53px;
+    margin-left: 109px;
+}
+.h2-contacts {
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    margin-top: 60px;
+    margin-left: 623px;
+}
+
+.address-select {
+    width: 450px;
+    height: 50px;
+    margin-left: 64px;
+    margin-top: 148px;
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-style: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+    text-indent: 20px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-right: 1.2em;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 35px);
+    background-size: 0.85em auto;
+    background-image: url("./assets/img/accordion_btn.svg");
+}
+.address-item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.05em;
+    color: #717171;
+}
+/*contacts css finish*/
