@@ -39,6 +39,26 @@
     line-height: 50px;
 }
 
+.nav-link::before {
+    content: '';
+	width: 0;
+	height: 5px;
+	background-color: red;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.nav-link::before {
+    transition: width 0.35s;
+}
+
+.nav-link:hover {
+    text-shadow: 2px 2px 2px #636060;
+    transition: 0.05s;
+}
+
 .navlist {
     display: flex;
     align-items: center;
@@ -49,9 +69,17 @@
 }
 .navitem:last-child {
     margin-right: 0px;
+    
 }
 .navitem {
     margin-right: 42px;
+    color: #010201;
+    text-decoration: none;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
 }
 /* header css finish*/
 /*main css start*/
@@ -173,7 +201,7 @@
     font-size: 40px;
     line-height: 52px;
     color: #499A18;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 
 .text-about {
@@ -204,7 +232,8 @@
     margin-left: 109px;
     width: 1007px;
     height: 94px;
-    padding-top: 5px;
+
+    
 }
 
 .h2-service {
@@ -215,13 +244,16 @@
     font-size: 40px;
     line-height: 52px;
     width: 306px;
+    margin-top: 8px;
 }
 
 .serv-btns {
     height: 50px;
-    width: 559px;
+    width: 560px;
     display: flex;
     justify-content: space-between;
+    margin-top: 14px;
+
 }
 .service-btn {
     border-radius: 5px;
@@ -232,6 +264,7 @@
     border-color: #E06733;
     border-style: solid;
     border-width: 1px;
+    text-align: center;
     font-family: 'Inika';
     font-style: normal;
     font-weight: 400;
@@ -254,10 +287,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 329px;
-    height: 449px;
+    width: 328px;
+    height: 448px;
     border-radius: 20px;
     border: 1px solid #E3E1D5;
+}
+
+.service-pic{
+    width: 329px;
 }
 
 .service-title {
@@ -268,7 +305,7 @@
     font-size: 20px;
     line-height: 20px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 
 .service-text {
@@ -283,7 +320,7 @@
 /*prices css start*/
 #prices {
     height: 520px;
-    padding-top: 40px;
+    padding-top: 39px;
     padding-left: 109px;
     padding-right: 109px;
     display: flex;    
@@ -349,7 +386,7 @@
     line-height: 50px;
     text-align: right;
     color: #000;
-    margin-bottom: 38px;
+    margin-bottom: 40px;
 }
 
 .contact-btn {
@@ -402,7 +439,7 @@
 .address-select {
     width: 450px;
     height: 50px;
-    margin-left: 64px;
+    margin-left: 68px;
     margin-top: 148px;
     background: #D6E7D2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -422,7 +459,7 @@
     background-repeat: no-repeat;
     background-position: calc(100% - 35px);
     background-size: 0.85em auto;
-    background-image: url("./assets/img/list_btn.png");
+    background-image: url("./assets/img/accordion_btn.svg");
 }
 .address-item {
     font-family: 'Inter';
@@ -452,7 +489,7 @@
 }
 
 .left-side {
-    width: 182px;
+    width: 169px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -471,6 +508,21 @@
     width: 188px;
     display: flex;
     justify-content: space-between;
+}
+
+.footer-link {
+    text-decoration: none;
+    
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+
+
+.footer-link:visited {
+    color: #000;
 }
 
 /*footer css finish*/
