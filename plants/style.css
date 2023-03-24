@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* header css start*/
 .header {
     display: flex;
@@ -25,11 +29,8 @@
     width: 1220px;
 }
 
-.nav-link.first {
-    color: #E06733;
-}
-
 .nav-link {
+    position: relative;
     color: #010201;
     text-decoration: none;
     font-family: 'Inika';
@@ -39,11 +40,21 @@
     line-height: 50px;
 }
 
+.nav-link.first {
+    color: #E06733;
+}
+
 .nav-link::before {
     content: '';
+    position: absolute;
+    left: 0; bottom: -5px;
 	width: 0;
-	height: 5px;
-	background-color: red;
+	height: 2px;
+	background-color: #000;
+}
+
+.nav-link.first::before {
+    background-color: #E06733;
 }
 
 .nav-link:hover::before {
@@ -52,11 +63,6 @@
 
 .nav-link::before {
     transition: width 0.35s;
-}
-
-.nav-link:hover {
-    text-shadow: 2px 2px 2px #636060;
-    transition: 0.05s;
 }
 
 .navlist {
@@ -159,6 +165,12 @@
     font-size: 16px;
     line-height: 20px;
     color: #000;
+}
+
+.welcome-button:hover {
+    color: #fff;
+    background-color: #E06733;
+    transition: 0.3s;
 }
 /*welcome css finish*/
 
@@ -270,6 +282,11 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
+}
+
+.service-btn:hover {
+    background-color: #f4cbba;
+    transition: 0.3s;
 }
 
 .services {
@@ -406,6 +423,12 @@
     margin-bottom: 39px;
 }
 
+.contact-btn:hover {
+    background-color: #E06733;
+    transition: 0.3s;
+    color: #fff;
+}
+
 .leafs-prices {
     width: 152px;
     height: 175px;
@@ -459,8 +482,14 @@
     background-repeat: no-repeat;
     background-position: calc(100% - 35px);
     background-size: 0.85em auto;
-    background-image: url("./assets/img/accordion_btn.svg");
+    background-image: url("./assets/img/list_btn.svg");
 }
+
+.address-select:focus {
+    background-color: #C1E698;
+    transition: 0.2s;
+}
+
 .address-item {
     font-family: 'Inter';
     font-style: normal;
@@ -519,10 +548,7 @@
     text-decoration: underline;
 }
 
-
-
 .footer-link:visited {
     color: #000;
 }
-
 /*footer css finish*/
