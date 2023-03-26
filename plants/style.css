@@ -27,6 +27,7 @@ html {
     justify-content: space-between;
     height: 50px;
     width: 1220px;
+    margin: 42px 109px;
 }
 
 .nav-link {
@@ -552,3 +553,26 @@ html {
     color: #000;
 }
 /*footer css finish*/
+
+/*768px media*/
+@media (max-width: 768px) {
+    .navbar {
+        width:100%;
+        margin: 35px 50px;
+    }
+    .container {
+        max-width: 100%;
+    }
+    #welcome {
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .container-welcome {
+        width: 668px;
+        margin: 40px 50px 70px 50px;
+    }
+    .leaf {
+        
+    }
+}
