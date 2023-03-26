@@ -566,13 +566,16 @@ html {
     #welcome {
         padding: 0;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
     .container-welcome {
         width: 668px;
         margin: 40px 50px 70px 50px;
+        flex-direction: row-reverse;
     }
+
     .leaf {
-        
+        max-width: 280px;
+        max-height: 254.15px;
     }
 }
