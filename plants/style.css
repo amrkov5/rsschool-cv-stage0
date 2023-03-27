@@ -12,7 +12,7 @@ html {
     background-color: #EDF2EC;
     justify-content: center;
     align-items: center;
-    height: 134px;
+    min-height: 134px;
 }
 
 .logo {
@@ -24,10 +24,12 @@ html {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content:space-between;
     height: 50px;
+    /* width: 1220px; */
     width: 1220px;
-    margin: 42px 109px;
+    /* margin: 42px 109px; */
 }
 
 .nav-link {
@@ -103,16 +105,20 @@ html {
 }
 /*welcome css start*/
 #welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #EDF2EC;
-    height: 408px;
-    padding: 62px 109px;
+    min-height: 532px;
+
 }
 
 .container-welcome {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 1222px;
-    height: 407.36px;
+    min-height: 407.36px;
 }
 
 .leaf {
@@ -182,16 +188,18 @@ html {
 /*about css start*/
 
 #about {
-    max-height: 666px;
-    padding: 93px 109px 94px;
+    min-height: 666px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-about {
     display: flex;
-
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 1222px;
-    height: 479px;
+    min-height: 479px;
 }
 
 .houseplant {
@@ -233,20 +241,24 @@ html {
 /*service css start*/
 #service {
     background-color: #EDF2EC;
-    height: 1260px;
-    padding-top: 40px;
+    min-height: 1269px;
+    padding-top: 31px;
+    display: flex;
+    /*width: 100%;*/
+    /* justify-content: center; */
+    flex-direction: column;
+    /*align-items: center; */
 }
 
 .service-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-right: auto;
+    margin-right: 324px;
     margin-left: 109px;
-    width: 1007px;
+    /* width: 1007px; */
     height: 94px;
-
-    
 }
 
 .h2-service {
@@ -291,15 +303,17 @@ html {
 }
 
 .services {
-    height: 955px;
-    width: 1222px;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    justify-self: center;
+    align-self: center;
+    min-height: 955px;
+    max-width: 1222px;
+    flex-wrap: wrap;
+    /*margin-left: auto;
+    margin-right: auto;*/
     align-content: space-between;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 90px;
+    margin-top: 97px;
 }
 .service {
     display: flex;
@@ -437,19 +451,24 @@ html {
 /*prices css finish*/
 /*contacts css start*/
 #contacts {
+    position: relative;
     height: 550px;
     background-color: #EDF2EC;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 .contact-pic {
-    position: absolute;
-    width: 400px;
-    height: 497px;
+    /* position: absolute; */
+    max-width: 400px;
+    max-height: 497px;
     margin-top: 53px;
     margin-left: 109px;
 }
 .h2-contacts {
+    /* position: absolute;
+    top: auto;
+    right: auto; */
     font-family: 'Inika', serif;
     font-style: normal;
     font-weight: 700;
@@ -457,14 +476,17 @@ html {
     line-height: 52px;
     color: #499A18;
     margin-top: 60px;
-    margin-left: 623px;
+    /*margin-left: 623px; */
 }
 
 .address-select {
+    position: absolute;
+    right: 109px;
+    top: 148px;
     width: 450px;
     height: 50px;
-    margin-left: 68px;
-    margin-top: 148px;
+    /* margin-left: 68px;
+    margin-top: 148px; */
     background: #D6E7D2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-style: none;
@@ -556,26 +578,95 @@ html {
 
 /*768px media*/
 @media (max-width: 768px) {
-    .navbar {
-        width:100%;
-        margin: 35px 50px;
+    .header {
+        min-height: 117px;
+        width: 100%;
     }
+    .navbar {
+        width: 668px;
+        height: 47px;
+        /* margin: 35px 50px; */
+    }
+/* 
+    .logo {
+        margin-top: 0px;
+    } */
+
+    .navlist {
+        height: 47px;
+        margin-left: 139px;
+        width: 452px;
+    }
+
     .container {
         max-width: 100%;
     }
     #welcome {
         padding: 0;
+        height: 420px;
         display: flex;
         justify-content: center;
     }
     .container-welcome {
         width: 668px;
-        margin: 40px 50px 70px 50px;
+        /* margin: 40px 50px 0px 50px; */
         flex-direction: row-reverse;
     }
 
+    .title-welcome {
+        height: 310px;
+        width: 346px;
+        padding-top: 0px;
+    }
+    .title {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 50px;
+        margin-bottom: 31px;
+    }
+    .text-welcome {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 36px;
+    }
     .leaf {
         max-width: 280px;
         max-height: 254.15px;
+    }
+
+    #about {
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 783px;
+    }
+
+    .container-about {
+        flex-direction: column;
+        align-content: center;
+        max-width: 668px;
+        align-items: center;
+    }
+    .title-about {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        max-width: 668px;
+    }
+
+    .h2-about {
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 46px;
+        text-align: center;
+        margin-bottom: 50px;
+
+    }
+
+    .houseplant {
+        max-width: 250px;
+        max-height: 258px;
     }
 }
