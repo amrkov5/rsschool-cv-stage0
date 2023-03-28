@@ -215,7 +215,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 605px;
+    max-width: 605px;
     height: 350px;
     margin-top: 68px;
 
@@ -253,6 +253,8 @@ html {
     /* justify-content: center; */
     flex-direction: column;
     /*align-items: center; */
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .service-content {
@@ -260,8 +262,8 @@ html {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-right: 324px;
-    margin-left: 109px;
+    margin-right: 294px;
+    margin-left: 79px;
     /* width: 1007px; */
     height: 94px;
 }
@@ -331,7 +333,11 @@ html {
 }
 
 .service-pic{
+    object-fit: cover;
+    min-width: 329px;
     width: 329px;
+    height: 350px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .service-title {
@@ -535,6 +541,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .container-footer {
@@ -586,6 +594,7 @@ html {
     .header {
         min-height: 117px;
         width: 100%;
+        padding: 0;
     }
     .navbar {
         width: 668px;
@@ -608,16 +617,18 @@ html {
     }
     #welcome {
         padding: 0;
-        height: 420px;
         display: flex;
         justify-content: center;
+        align-items: flex-start;
+        min-height: 420px;
     }
     .container-welcome {
         width: 668px;
-        /* margin: 40px 50px 0px 50px; */
+        margin: 40px 50px 0px 50px;
         flex-direction: row-reverse;
+        min-height: 310px;
+        justify-content: center;
     }
-
     .title-welcome {
         height: 310px;
         width: 346px;
@@ -641,7 +652,7 @@ html {
     }
 
     #about {
-
+        padding: 0;
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -656,9 +667,9 @@ html {
     }
     .title-about {
         margin-top: 40px;
-        display: flex;
         align-items: center;
         max-width: 668px;
+        justify-content: flex-start;
     }
 
     .h2-about {
@@ -666,12 +677,94 @@ html {
         font-size: 35px;
         line-height: 46px;
         text-align: center;
-        margin-bottom: 50px;
-
+        margin-bottom: 49px;
     }
 
     .houseplant {
         max-width: 250px;
         max-height: 258px;
+        margin-top: 40px;
+    }
+    #service {
+        padding: 0;
+        min-height: 1780px;
+    }
+    .service-content {
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: auto;
+    }
+    .h2-service {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 46px;
+        margin-top: 9px;
+    }
+    .serv-btns {
+        margin-top: 43px;
+    }
+    .services {
+        max-width: 668px;
+        margin-top: 141px;
+        min-height: 1426px;
+    }
+    .service {
+        max-width: 281px;
+        max-height: 450px;
+    }
+    .service-pic {
+        max-width: 280px;
+        max-height: 350px;
+        min-width: auto;
+    }
+    .service-title {
+        margin-bottom: 8px;
+    }
+    .service-text {
+        max-width: 201px;
+        text-align: center;
+    }
+    #prices {
+        min-height: 585px;
+        height: auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .price-type {
+
+        margin-top: 40px;
+    }
+    .h2-price {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 42px;
+        margin-left: 15px;    
+        margin-bottom: 57px;
+    }
+    .h3-call-us {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 28px
+    }
+    .call-us-wrap {
+        max-width: 296px;
+        margin-top: 140px;
+        margin-left: 42px;
+    }
+    .contact-btn {
+        margin-bottom: 30px;
+    }
+    #contacts {
+        display: flex;
+    }
+    .h2-contacts {
+        align-items: center;
+        flex-wrap: wrap;
     }
 }
