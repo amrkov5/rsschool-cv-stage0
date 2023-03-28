@@ -462,24 +462,23 @@ html {
 /*prices css finish*/
 /*contacts css start*/
 #contacts {
-    position: relative;
     height: 550px;
     background-color: #EDF2EC;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: center;
 }
+.container-contacts {
+    display: flex;
+    justify-content: space-between;
+    width: 1222px;
+}
+
 .contact-pic {
-    /* position: absolute; */
     max-width: 400px;
     max-height: 497px;
     margin-top: 53px;
-    margin-left: 109px;
 }
 .h2-contacts {
-    /* position: absolute;
-    top: auto;
-    right: auto; */
     font-family: 'Inika', serif;
     font-style: normal;
     font-weight: 700;
@@ -487,17 +486,14 @@ html {
     line-height: 52px;
     color: #499A18;
     margin-top: 60px;
-    /*margin-left: 623px; */
+    margin-left: 45px;
 }
 
 .address-select {
-    position: absolute;
-    right: 109px;
-    top: 148px;
     width: 450px;
     height: 50px;
-    /* margin-left: 68px;
-    margin-top: 148px; */
+    /* margin-left: 68px;*/
+    margin-top: 148px;
     background: #D6E7D2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-style: none;
@@ -533,6 +529,10 @@ html {
     /* identical to box height, or 200% */
     letter-spacing: 0.05em;
     color: #717171;
+}
+.address {
+    width: 448px;
+    height: 214px;
 }
 /*contacts css finish*/
 /*footer css start*/
@@ -627,7 +627,7 @@ html {
         margin: 40px 50px 0px 50px;
         flex-direction: row-reverse;
         min-height: 310px;
-        justify-content: center;
+        /* justify-content: center; */
     }
     .title-welcome {
         height: 310px;
@@ -750,7 +750,7 @@ html {
         font-weight: 700;
         font-size: 25px;
         line-height: 35px;
-        margin-bottom: 28px
+        margin-bottom: 28px;
     }
     .call-us-wrap {
         max-width: 296px;
@@ -762,9 +762,55 @@ html {
     }
     #contacts {
         display: flex;
+        min-height: 739px;
     }
     .h2-contacts {
+        order: 1;
+        margin-top: 40px;
+        margin-left: 0;
+        margin-bottom: 81px;
+    }
+
+    .container-contacts {
+        flex-direction: column;
         align-items: center;
-        flex-wrap: wrap;
+        
+    }
+    .address-select {
+        margin: 0;
+        order: 2;
+    }
+    .contact-pic {
+        order: 4;
+        margin: 0;
+        margin-left: 20px;
+        max-width: 200px;
+    }
+    .address {
+        order: 3;
+        border: 1px solid #000;
+        visibility: hidden;
+    }
+
+    .footer {
+        height: 181px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .container-footer {
+        flex-direction: column;
+        min-height: 130px;
+        height: unset;
+        justify-content: flex-start;
+    }
+    .left-side {
+        margin-top: 6px;
+        margin-bottom: 18px;
+    }
+    .footer-text {
+        line-height: 24px;
+    }
+    .right-side {
+        margin-top: 25px;
     }
 }
