@@ -262,10 +262,10 @@ html {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-right: 294px;
+    /* margin-right: 294px; */
     margin-left: 79px;
-    /* width: 1007px; */
-    height: 94px;
+    max-width: 1007px;
+    min-height: 94px;
 }
 
 .h2-service {
@@ -629,7 +629,7 @@ html {
 
     .navlist {
         height: 47px;
-        margin-left: 139px;
+        /* margin-left: 139px; */
         width: 452px;
     }
 
@@ -637,15 +637,15 @@ html {
         max-width: 100%;
     }
     #welcome {
-        padding: 0;
+        padding: 40px 50px 0px 50px;
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        min-height: 420px;
+        min-height: 380px;
     }
     .container-welcome {
         width: 668px;
-        margin: 40px 50px 0px 50px;
+        /* margin: 40px 50px 0px 50px; */
         flex-direction: row-reverse;
         min-height: 310px;
         /* justify-content: center; */
@@ -654,6 +654,10 @@ html {
         height: 310px;
         width: 346px;
         padding-top: 0px;
+    }
+    .title-about {
+        min-height: 350px;
+        height: auto;
     }
     .title {
         font-weight: 700;
@@ -673,11 +677,11 @@ html {
     }
 
     #about {
-        padding: 0;
+        padding: 0px 20px 0px 20px;
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        height: 783px;
+        min-height: 783px;
     }
 
     .container-about {
@@ -707,12 +711,12 @@ html {
         margin-top: 40px;
     }
     #service {
-        padding: 0;
+        padding: 0px 20px 0px 20px;
         min-height: 1780px;
     }
     .service-content {
         margin-top: 50px;
-        margin-left: 50px;
+        margin-left: 30px;
         margin-right: auto;
     }
     .h2-service {
