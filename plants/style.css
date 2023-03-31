@@ -258,18 +258,25 @@ html {
 }
 
 .service-content {
+    /* display: grid;
+    grid-template-columns: 306px 142px 559px; */
+    max-width: 1007px;
+    margin-left: 79px;
+    align-items: center;
+    grid-template-areas: "h2 . btns";
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    /* margin-right: 294px; */
-    margin-left: 79px;
-    max-width: 1007px;
+    /* margin-right: 294px;*/
+    
+    
     min-height: 94px;
-}
+} 
 
 .h2-service {
     color: #499A18;
+    /* grid-area: h2; */
     font-family: 'Inika';
     font-style: normal;
     font-weight: 400;
@@ -280,8 +287,10 @@ html {
 }
 
 .serv-btns {
+    /* grid-area:btns; */
     height: 50px;
-    width: 560px;
+    flex-basis: 560px;
+    /* width: 560px; */
     display: flex;
     justify-content: space-between;
     margin-top: 14px;
@@ -320,7 +329,7 @@ html {
     margin-right: auto;*/
     align-content: space-between;
     justify-content: space-between;
-    margin-top: 97px;
+    margin-top: 80px;
 }
 .service {
     display: flex;
@@ -728,6 +737,7 @@ html {
     }
     .serv-btns {
         margin-top: 43px;
+        flex-wrap: wrap;
     }
     .services {
         max-width: 668px;
@@ -841,5 +851,85 @@ html {
     }
     .right-side {
         margin-top: 25px;
+    }
+}
+
+@media (max-width: 380px) {
+    .header {
+        min-height: 96px;
+    }
+    .navbar {
+        display: none;
+    }
+    #welcome {
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        min-height: 300px;
+    }
+    .container-welcome {
+        flex-direction: inherit;
+        justify-content: center;
+        align-items: center;
+        min-height: 252px;
+        max-width: 330px;
+    }
+    .leaf {
+        display: none;
+    }
+    .title-welcome {
+        padding: 0;
+        height: 250px;
+        justify-content: space-between;
+    }
+    .title {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 35px;
+        margin: 0;
+    }
+    .text-welcome {
+        margin: 0;
+    }
+    .welcome-button {
+        width: 100px;
+        height: 34.14px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 20px;
+    }
+    #about {
+        min-height:516px;
+        padding:0;   
+        justify-content: center;
+        align-items: center;
+    }
+    .container-about {
+        max-width: 330px;
+        max-height: 455px;
+        min-height: auto;
+        flex-wrap: nowrap;
+    }
+    .title-about {
+        margin:0;
+        height: auto;
+        min-height: auto;
+    }
+    .h2-about {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 33px;
+        text-align: center;
+        margin-bottom: 13px;
+    }
+    .text-about {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .houseplant {
+        width: 150px;
+        height: 147px;
+        margin: 0;
     }
 }
