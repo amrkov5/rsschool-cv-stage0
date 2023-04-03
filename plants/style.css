@@ -963,31 +963,68 @@ html {
         justify-content: space-between;    
         min-height: 2870px;
     }
+    .service-title {
+        margin-bottom: 10px;
+    }
+    #prices {
+        min-height: 512px;
+    }
     .price-type {
         text-align: center;
         margin-top: 25px;
         display: flex;
         flex-direction: column;
+        height: auto;
+        align-items: center;
     }
     .h2-price {
         font-weight: 700;
         font-size: 25px;
         line-height: 30px;
         margin-left: 0;
+        margin-bottom: 37px;
     }
     .price-types {
-        max-width: 224px;
-        flex-basis: 173px;
-        /* max-height: 235px; */
+        max-width: 222px;
+        flex-basis: 177px;
         padding-top: 29px;
+        padding-bottom: 27px;
         justify-content: space-between;
+        width: 224px;
     }
     .price {
-        padding-left: 40px;
-        padding-right: 30px;
+        padding-left: 30px;
+        padding-right: 40px;
         max-width: 110px;
         font-weight: 700;
         font-size: 15px;
         line-height: 20px;
+    }
+    .call-us-wrap {
+        margin: 0;
+        margin-top: 10px;
+        align-items: center;
+    }
+    .h3-call-us {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 35px; 
+        text-align: center;
+        max-width: 230px;
+        margin-bottom: 20px;
+    }
+    .contact-btn {
+        width: 121px;
+        height: 35px;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .leafs-prices {
+        display: none;
+    }
+    #contacts {
+        padding: 0;
+        max-height: 445px;
     }
 }
