@@ -27,6 +27,7 @@ html {
 }
 .hidden-menu {
     right: -380px;
+    /* display: none; по этому ещё вопрос */
 }
 /* header css start*/
 .header {
