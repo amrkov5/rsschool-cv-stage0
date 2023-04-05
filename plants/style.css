@@ -16,6 +16,17 @@ html {
     padding-right: 30px;
     padding-left: 30px;
 }
+.hamb-container {
+    display: none;
+    width: 40px;
+    /* flex-direction: column; */
+
+}
+.hamb-line {
+    height: 2px;
+    width: 40px;
+    background-color: #717171;
+}
 
 .logo {
     margin-top: 8px;
@@ -626,10 +637,23 @@ html {
         width: 100%;
         padding: 0;
     }
+
     .navbar {
         width: 668px;
         height: 47px;
         /* margin: 35px 50px; */
+        align-items: center;
+    }
+    .navlist {
+        display: none;
+    }
+    .hamb-container {
+        display: flex;
+        max-height: 34px;
+        min-height: 32px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 2px;
     }
 /* 
     .logo {
@@ -741,7 +765,7 @@ html {
     }
     .services {
         max-width: 668px;
-        margin-top: 141px;
+        margin-top: 40px;
         min-height: 1426px;
     }
     .service {
@@ -857,8 +881,19 @@ html {
 @media (max-width: 380px) {
     .header {
         min-height: 96px;
+        padding: 0px 25px 0px 25px;
+        width: calc(100% - 50px);
     }
     .navbar {
+        /* width:unset; */
+    }
+    .logo {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        margin-top: 0;
+    }
+    .navlist {
         display: none;
     }
     #welcome {
