@@ -1025,6 +1025,42 @@ html {
     }
     #contacts {
         padding: 0;
-        max-height: 445px;
+        /* max-height: 445px; */
+        min-height: 445px;
+    }
+    .h2-contacts {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 33px;
+        margin-top: 25px;
+    }
+    .container-contacts {
+        margin-top: 80px;
+    }
+    .address-selector {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .address-select {
+        width: 300px;
+        background-position: calc(100% - 22px);
+    }
+    .address {
+        min-width: auto;
+        min-height: 71px;
+    }
+    .contact-pic {
+        width: 100px;
+    }
+    .footer {
+        height: 146px;
+    }
+    .left-side {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .right-side {
+        margin-top: 12px;
     }
 }
