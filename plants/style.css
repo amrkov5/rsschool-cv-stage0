@@ -27,7 +27,6 @@ html {
 }
 .hidden-menu {
     width: 0px;
-    /* display: none; по этому ещё вопрос */
 }
 /* .hamb-list {
     margin-left: 50px;
@@ -396,6 +395,11 @@ html {
     transition: 0.3s;
 }
 
+.service-btn__active {
+    background: #E06733;
+    color: #fff;
+}
+
 .services {
     display: flex;
     justify-self: center;
@@ -417,6 +421,10 @@ html {
     height: 448px;
     border-radius: 20px;
     border: 1px solid #E3E1D5;
+}
+
+.service-blur {
+    filter: blur(2px);
 }
 
 .service-pic{
@@ -953,9 +961,7 @@ html {
         padding: 0px 25px 0px 25px;
         width: calc(100% - 50px);
     }
-    .navbar {
-        /* width:unset; */
-    }
+
     .logo {
         font-weight: 400;
         font-size: 16px;

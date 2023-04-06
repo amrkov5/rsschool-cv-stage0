@@ -1,10 +1,10 @@
+//Hamburger menu start
 const hambContainer = document.querySelector('.hamb-container')
 const hambLine = document.querySelectorAll('.hamb-line')
 const hambBg = document.querySelector('.bg-menu')
 const hambMenu = document.querySelector('.hamb-menu')
 const hambList = document.querySelector('.hamb-list')
 const hambLinks = document.querySelectorAll('.hamb-item a')
-console.log(hambLinks)
 
 const toggleHambMenu = () => {
     hambMenu.classList.toggle('hidden-menu')
@@ -18,19 +18,26 @@ const toggleHambMenu = () => {
 
 hambContainer.addEventListener('click', toggleHambMenu)
 hambBg.addEventListener('click', toggleHambMenu)
-// addEventListener('click', (event) => {
-//     console.log(event)
-// })
-
 hambLinks.forEach((el) => {
     el.addEventListener('click', toggleHambMenu)
 })
-// hambLinks.addEventListener('click', () => {
-//     hambLinks.forEach(element => {
-//         toggleHambMenu()
-//     });
-// })
+//hamburger menu finish
 
-// hambMenu.addEventListener('animationend', () => {
-//     hambBg.classList.toggle('hidden-bg')
-// })
+//service functions start
+const serviceBtn = document.querySelectorAll('.service-btn')
+const serviceType = document.querySelectorAll('.service')
+
+const chooseService = () => {
+    if (event.srcElement.innerHTML.includes('Garden')) {
+        serviceBtn[0].classList.toggle('service-btn__active')
+        console.log('zaebis')
+    }
+}
+const showEvent = () => {
+    console.log(event)
+}
+serviceBtn.forEach((btn) => {
+    btn.addEventListener('click', chooseService)
+})
+// function () {chooseService(btn)}
+//service function finish
