@@ -24,20 +24,47 @@ hambLinks.forEach((el) => {
 //hamburger menu finish
 
 //service functions start
-const serviceBtn = document.querySelectorAll('.service-btn')
-const serviceType = document.querySelectorAll('.service')
+const serviceBtn = document.getElementsByClassName('service-btn')
+const serviceType = document.getElementsByClassName('service')
+console.log(serviceBtn)
+console.log(serviceType)
 
-const chooseService = () => {
-    if (event.srcElement.innerHTML.includes('Garden')) {
-        serviceBtn[0].classList.toggle('service-btn__active')
-        console.log('zaebis')
+const toggleServiceBtns = (el) => {
+    console.log('toggle')
+    let pushed = 0
+    for (const elem of serviceBtn) {
+        console.log(elem)
+        if (elem.matches('.service-btn__active') && !el.matches('.service-btn__active')) {
+            pushed++    
+            console.log('pushed:',pushed)
+       }
+    }
+    if (pushed === 2) {
+        alert('Only two services can be chosen')
+    } else {
+        el.classList.toggle('service-btn__active')
+        console.log(el.innerHTML)
+        for (const serviceEl of serviceType) {
+            console.log(serviceEl.includes(el.innerHTML.toString()))
+            if (!serviceEl.matches(el.innerHTML)) {
+                console.log('1233')
+                serviceEl.classList.toggle('service-blur')
+                serviceEl.classList.toggle('checked')
+            }
+        //     console.log('inner_services',serviceEl.innerHTML)
+        //     console.log('childnodes',serviceEl.childNodes[3])
+        //     if (!el.innerHTML === 'Gardens') {
+        //         serviceEl.classList.toggle('service-blur')
+        //     }
+        }
     }
 }
-const showEvent = () => {
-    console.log(event)
+
+// serviceBtn.forEach(el => 
+for (const el of serviceBtn) {
+    el.addEventListener('click', function() {
+        toggleServiceBtns(el)
+    })
+    console.log('123', el)
 }
-serviceBtn.forEach((btn) => {
-    btn.addEventListener('click', chooseService)
-})
-// function () {chooseService(btn)}
 //service function finish
