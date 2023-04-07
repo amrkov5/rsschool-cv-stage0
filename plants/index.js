@@ -26,41 +26,30 @@ hambLinks.forEach((el) => {
 //service functions start
 const serviceBtn = document.getElementsByClassName('service-btn')
 const serviceType = document.getElementsByClassName('service')
-console.log(serviceBtn)
-console.log(serviceType)
 
 const toggleServiceBtns = (el) => {
-    console.log('toggle')
     let pushed = 0
     for (const elem of serviceBtn) {
-        console.log(elem)
         if (elem.matches('.service-btn__active') && !el.matches('.service-btn__active')) {
             pushed++    
-            console.log('pushed:',pushed)
        }
     }
     if (pushed === 2) {
         alert('Only two services can be chosen')
     } else {
         el.classList.toggle('service-btn__active')
-        console.log(el.innerHTML)
         for (const serviceEl of serviceType) {
-            console.log(serviceEl.includes(el.innerHTML.toString()))
-            if (!serviceEl.matches(el.innerHTML)) {
-                console.log('1233')
-                serviceEl.classList.toggle('service-blur')
-                serviceEl.classList.toggle('checked')
+            if (serviceEl.classList.contains(el.innerHTML.toLowerCase())) {
+                serviceEl.classList.toggle('active')
+            } 
+            if (!serviceEl.classList.contains('active')) {
+                serviceEl.classList.add('service-blur')
             }
-        //     console.log('inner_services',serviceEl.innerHTML)
-        //     console.log('childnodes',serviceEl.childNodes[3])
-        //     if (!el.innerHTML === 'Gardens') {
-        //         serviceEl.classList.toggle('service-blur')
-        //     }
         }
     }
+    
 }
 
-// serviceBtn.forEach(el => 
 for (const el of serviceBtn) {
     el.addEventListener('click', function() {
         toggleServiceBtns(el)
