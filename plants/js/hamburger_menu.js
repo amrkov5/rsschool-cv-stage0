@@ -22,4 +22,3 @@ hambLinks.forEach((el) => {
     el.addEventListener('click', toggleHambMenu)
 })
 //hamburger menu finish
-
