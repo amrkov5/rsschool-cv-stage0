@@ -20,6 +20,8 @@ const openAccordionMenu = (el) => {
     el.parentElement.classList.toggle('price__active')
 }
 
+
+
 for (const el of priceTitle) {
     el.addEventListener('click', function () {
         openAccordionMenu(el)
