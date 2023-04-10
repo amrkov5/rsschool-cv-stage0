@@ -18,6 +18,17 @@ const openAccordionMenu = (el) => {
     el.nextElementSibling.classList.toggle('price-block__active')    
     el.parentElement.parentElement.classList.toggle('price-types__active')
     el.parentElement.classList.toggle('price__active')
+    el.addEventListener('transitionstart', function () {
+        changeBtnPic(el)
+    })
+}
+
+const changeBtnPic = (el) => {
+    if (el.classList.contains('price-title__active')) {
+        el.lastElementChild.src = './plants/assets/img/accordion_btn_active.svg'
+    } else {
+        el.lastElementChild.src = './plants/assets/img/accordion_btn.svg'
+    }
 }
 
 
