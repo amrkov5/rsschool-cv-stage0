@@ -45,6 +45,5 @@ for (const el of serviceBtn) {
     el.addEventListener('click', function() {
         toggleServiceBtns(el)
     })
-    console.log('123', el)
 }
 //service function finish

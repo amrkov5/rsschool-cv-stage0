@@ -421,6 +421,7 @@ html {
     height: 448px;
     border-radius: 20px;
     border: 1px solid #E3E1D5;
+    transition:0.3s
 }
 
 .service-blur {
@@ -482,21 +483,33 @@ html {
 .price-types {
     border: 1px solid #E3E1D5;
     border-radius: 20px;
-    height: 212px;
+    min-height: 212px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 34px;
     padding-bottom: 34px;
     align-items: center;
+    gap:32px;
 }
 
 .price {
     display: flex;
+    flex-direction: column;
+    /* max-height: 150px; */
+    border-radius: 20px;
+    background-color: #EDF2EC;
+    transition: background-color 0.3s;
+}
+
+.price__active {
+    background-color: #D6E7D2;
+}
+
+.price-title {
+    display: flex;
     width: 170px;
     height: 50px;
-    background-color: #EDF2EC;
-    border-radius: 20px;
     justify-content: space-between;
     align-items: center;
     padding-left: 40px;   
@@ -507,6 +520,100 @@ html {
     font-size: 20px;
     line-height: 20px;
     color: #000;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.price-title__active {
+    height: 46px;
+}
+
+.price-title img {
+    transition: 0.3s;
+}
+
+.accordion_btn {
+    fill: #AEA1A1;
+    stroke: #fff;
+    transform: rotate(180deg);
+    transition: 0.3s ease-in-out;
+}
+
+.price-block {
+    width: 170px;
+    transition: 0.3s;
+    padding-left: 40px;
+    padding-right: 40px;
+    overflow: hidden;
+    height: 0;
+}
+
+.price-block__active {
+    height: 108px;
+}
+
+.price-border {
+    border-top: 0.5px solid #AEA1A1;
+}
+
+.price-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    color: #717171;
+}
+
+.price-text__hidden {
+    display: none;
+}
+
+.price-count {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.price-count__hidden {
+    display: none;
+}
+
+.price-text__orange {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #E06733;
+}
+
+.order-btn {
+    width: 86px;
+    height: 25px;
+    background-color: #fff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #717171;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #f4cbba;
+}
+
+.order-btn__hidden {
+    display: none;
 }
 
 .call-us-wrap {
