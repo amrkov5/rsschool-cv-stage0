@@ -31,8 +31,6 @@ const changeBtnPic = (el) => {
     }
 }
 
-
-
 for (const el of priceTitle) {
     el.addEventListener('click', function () {
         openAccordionMenu(el)
