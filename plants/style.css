@@ -708,19 +708,21 @@ html {
     /* margin-top: 60px; */
     /* margin-left: 45px; */
 }
-.address-selector {
+.address-container {
     display: flex;
     width: 450px;
     flex-direction: column;
     /* margin-top: 148px; */
     order: 2;
     z-index: 100;
+    position: relative;
 }
 .address-select {
     width: 100%;
     height: 50px;
-    /* margin-left: 68px;*/
-    /* margin-top: 148px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: #D6E7D2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-style: none;
@@ -732,42 +734,144 @@ html {
     letter-spacing: 0.05em;
     color: #717171;
     text-indent: 20px;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    padding-right: 1.2em;
-    background-repeat: no-repeat;
-    background-position: calc(100% - 35px);
-    background-size: 0.85em auto;
-    background-image: url("./assets/img/list_btn.svg");
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
 
-.address-select:focus {
-    background-color: #C1E698;
-    transition: 0.2s;
+.address-select__active {
+    background: #C1E698;
+    box-shadow: none;
+}
+
+.address-select__chosen {
+    background: #C1E698;
+}
+
+.select-pic {
+    margin-right: 35px;
+    transition: 0.2s ease-in-out;
+}
+
+.select-pic__active {
+    transform: rotate(180deg);
+}
+
+.address-selector {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    background: #D6E7D2;
+    height: 0;
+    transition: 0.2s ease-in-out;
+    padding: 0 50px 0 20px;
+    overflow: hidden;
+}
+
+.address-selector__active {
+    height: 234px;
+    padding: 27px 50px 31px 20px;
+
 }
 
 .address-item {
     font-family: 'Inter';
     font-style: normal;
-    width: 450px;
     font-weight: 400;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 30px;
     letter-spacing: 0.05em;
-    color: #717171;
-    background: #D6E7D2;
+    color: #499A18;
+    transition: color 0.1s ;
+    text-align: left;
+    border-bottom: #D9D9D9 solid 1px;
+    text-indent: 6px;
+    cursor: pointer;
+}
+
+.address-item:not(:first-child) {
+    margin-top: 17px;
+}
+
+.div-select-item {
+    width: 450px;
+    height: 100px;
 }
 
 .address-item:hover {
-    color: #499A18;
+    color: #717171;
+    border-bottom: #717171 solid 1px;
 }
 
 .address {
-    min-width: 448px;
-    min-height: 100px;
+    display: none;
+
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: calc(100% - 109px);
+    min-height: 164px;
     margin-top: 61px;
     border: 1px solid black;
+    border-radius: 20px;
+    padding: 17px 76px 32px 33px;
+}
+
+.address__active {
+    display: flex;
+}
+
+.contacts-type {
+    width: 133px;
+    text-align: left;
+}
+
+.cont-type-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #000;
+}
+
+.contacts-text {
+    width: 206px;
+}
+
+.cont-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+    text-align: left;
+}
+
+.call-us-btn {
+    border: 1px solid #E06733;
+    background: #EDF2EC;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 126px;
+    height: 26px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    color: #717171;
+    transition: color 0.3s
+}
+
+.call-us-btn:hover {
+    background: #E06733;
+    color: #fff;
 }
 /*contacts css finish*/
 /*footer css start*/
