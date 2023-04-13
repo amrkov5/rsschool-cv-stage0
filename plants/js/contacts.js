@@ -6,7 +6,7 @@ const selectDiv = document.createElement('div')
 const selectText = document.createTextNode('City')
 const selectPic = document.createElement('img')
 const addressSelector = document.createElement('div')
-const contactText = document.querySelector('.contacts-text')
+const contactText = document.querySelectorAll('.contacts-text')
 
 const buildAddressSelector = () => {
     selectPic.src = './plants/assets/img/list_btn.svg'
@@ -29,6 +29,7 @@ const openSelectMenu = () => {
     selectDiv.classList.toggle('address-select__active')
     selectPic.classList.toggle('select-pic__active')
     addressSelector.classList.toggle('address-selector__active')
+
 }
 
 const items = document.getElementsByClassName('address-item')
@@ -43,10 +44,13 @@ const chooseAddr = (el) => {
     while (cityArr[i] != el.innerText) {
         i++
     }
-    contactText.firstElementChild.textContent = cityArr[i]
-    contactText.firstElementChild.nextElementSibling.textContent = telArr[i]
-    contactText.lastElementChild.textContent = streetArr[i]
+    contactText[0].firstElementChild.textContent = cityArr[i]
+    contactText[1].firstElementChild.textContent = telArr[i]
+    contactText[2].firstElementChild.textContent = streetArr[i]
     document.querySelector('.address').classList.add('address__active')
+    if (window.matchMedia("(max-width: 768px)")){
+        document.querySelector('.container-contacts').classList.add('container-contacts__768active')
+    }
 
 }
 

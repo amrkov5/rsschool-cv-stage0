@@ -690,7 +690,7 @@ html {
     max-height: 497px;
     /* position: absolute; */
     left: 109px;
-    bottom: 0;
+    bottom: 0px;
     order: 1;
     /* margin-top: 53px; */
     z-index: 1;
@@ -710,12 +710,13 @@ html {
 }
 .address-container {
     display: flex;
-    width: 450px;
+    /* max-width: 450px; */
     flex-direction: column;
     /* margin-top: 148px; */
     order: 2;
     z-index: 100;
     position: relative;
+    flex-basis: 450px;
 }
 .address-select {
     width: 100%;
@@ -804,17 +805,30 @@ html {
 }
 
 .address {
-    display: none;
-
+    /* display: none; */
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
-    width: calc(100% - 109px);
+    width: 100%;
     min-height: 164px;
-    margin-top: 61px;
+    margin-top: 47px;
     border: 1px solid black;
     border-radius: 20px;
-    padding: 17px 76px 32px 33px;
+    padding: 41px 0 32px 0;
+    background-color: #EDF2EC;
+}
+
+.address-wrap {
+    margin-left: 33px;
+}
+
+.text-line {
+    display: flex;
+    width: 100%;
+}
+
+.text-line:not(:first-child) {
+    margin-top: 24px;
 }
 
 .address__active {
@@ -822,8 +836,9 @@ html {
 }
 
 .contacts-type {
-    width: 133px;
+    flex-basis: 133px;
     text-align: left;
+    flex-shrink: 0;
 }
 
 .cont-type-text {
@@ -831,13 +846,13 @@ html {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 40px;
+    line-height: 16px;
     letter-spacing: 0.05em;
     color: #000;
 }
 
 .contacts-text {
-    width: 206px;
+    flex-basis: 206px;
 }
 
 .cont-text {
@@ -855,7 +870,7 @@ html {
     border: 1px solid #E06733;
     background: #EDF2EC;
     border-radius: 5px;
-    margin-left: auto;
+    /* margin-left: ; */
     margin-right: auto;
     width: 126px;
     height: 26px;
@@ -866,7 +881,8 @@ html {
     line-height: 13px;
     text-align: center;
     color: #717171;
-    transition: color 0.3s
+    transition: color 0.3s;
+    margin-top: 41px;
 }
 
 .call-us-btn:hover {
@@ -1112,6 +1128,7 @@ html {
         align-items: center;
         padding: unset;
         padding-top: 40px;
+        position: relative;
 
     }
     /* .h2-contacts {
@@ -1121,11 +1138,21 @@ html {
         margin-bottom: 81px; 
     } */
 
+    .address-container {
+        flex-basis: 450px;
+    }
+
     .container-contacts {
-        flex-direction: column-reverse;
+        /* flex-direction: column-reverse; */
+        justify-content: center;
         align-items: center;
         margin-top: 99px;
+        transition: margin-top 0.2s;
         
+    }
+
+    .container-contacts__768active {
+        margin-top: 61px;
     }
     /* .address-select {
         margin: 0;
@@ -1135,12 +1162,12 @@ html {
         max-width: 200px;
         bottom: 0;
         left: calc(50% - 90px);
+        position: absolute;
     }
     .address {
         position:initial;
         order: 3;
         border: 1px solid #000;
-        visibility: hidden;
     }
 
     .footer {
@@ -1207,7 +1234,8 @@ html {
         justify-content: center;
         align-items: center;
         min-height: 252px;
-        max-width: 330px;
+        /* max-width: 330px; */
+        width: 100%;
     }
     .leaf {
         display: none;
@@ -1393,7 +1421,19 @@ html {
     }
     .container-contacts {
         margin-top: 80px;
+        justify-content: center;
     }
+    .container-contacts__768active {
+        margin-top: 42px;
+    }
+    .address {
+        margin-top: 49px;
+    }
+    .address-container {
+        flex-basis: 300px;
+        align-items: center;
+    }
+
     .address-selector {
         justify-content: center;
         align-items: center;
@@ -1401,17 +1441,27 @@ html {
     }
     .address-select {
         width: 300px;
-        background-position: calc(100% - 22px);
+        /* background-position: calc(100% - 22px); */
     }
+    .select-pic {
+        margin-right: 22px;
+    }
+
     .address {
-        min-width: auto;
-        min-height: 71px;
+        padding: 23px 36px;
+        width: calc(100% - 72px);
+    }
+
+    .contacts-type {
+
     }
     .contact-pic {
         width: 100px;
         bottom: 0;
         left: calc(50% - 50px);
     }
+
+
     .footer {
         height: 146px;
     }
