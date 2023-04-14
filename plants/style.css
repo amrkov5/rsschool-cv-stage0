@@ -1428,6 +1428,11 @@ html {
         line-height: 33px;
         margin-top: 25px;
     }
+
+    .contact-pic__hidden {
+        visibility: hidden;
+    }
+
     .container-contacts {
         margin-top: 80px;
         justify-content: center;

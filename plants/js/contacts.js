@@ -53,7 +53,7 @@ const chooseAddr = (el) => {
     }
     if (window.matchMedia("(max-width: 380px)")){
         document.querySelector('.container-contacts').classList.add('container-contacts__768active')
-        document.querySelector('.contact-pic').style.display = 'none'
+        document.querySelector('.contact-pic').classList.toggle('contact-pic__hidden')
     }
 
 }
