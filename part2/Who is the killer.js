@@ -1,0 +1,3 @@
+function killer(suspectInfo, dead) {
+    //your code here...
+}
