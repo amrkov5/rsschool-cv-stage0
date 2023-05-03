@@ -12,6 +12,7 @@ async function getWeather() {
     weatherIcon.classList.add(`owf-${data.list[0].weather[0].id}`)
     temperature.textContent = `${data.list[0].main.temp}°C`
     weatherDescription.textContent = data.list[0].weather[0].description
+    setTimeout(showTime, 60000)
 }
 
 getWeather()
